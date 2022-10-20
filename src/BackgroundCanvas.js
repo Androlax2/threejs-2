@@ -107,7 +107,7 @@ export default class BackgroundCanvas {
 		this.#gltfLoader = new GLTFLoader();
 		this.#mesh = new Mesh();
 
-		this.#gltfLoader.load('./src/3d/scene.gltf', (gltf) => {
+		this.#gltfLoader.load('/3d/scene.gltf', (gltf) => {
 			gltf.scene.scale.set(0.1, 0.1, 0.1);
 
 			this.#mesh.add(gltf.scene);
